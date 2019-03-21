@@ -1,0 +1,6 @@
+framework module LYULibrary {
+  umbrella header "LYULibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

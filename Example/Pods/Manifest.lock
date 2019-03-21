@@ -1,0 +1,16 @@
+PODS:
+  - LYULibrary (0.1.0)
+
+DEPENDENCIES:
+  - LYULibrary (from `../`)
+
+EXTERNAL SOURCES:
+  LYULibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LYULibrary: b70256dc50dd0df87cd9af844554a719304732c3
+
+PODFILE CHECKSUM: 4ede392263ec9ea274a9f402dcc6e769589da282
+
+COCOAPODS: 1.5.3
