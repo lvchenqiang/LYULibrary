@@ -7,24 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051B672EE84C902201EFB538E4A01AD0 /* UIView+BlockGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = EA39416BAB3A8FB3856D01CF6F947420 /* UIView+BlockGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10990275A39A628B80142190C5A18E77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0B3AFDF203F93263C20330051F329622 /* UIResponder+Router.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AAE4B66E973AA5FD2BA9F7B18554EB6 /* UIResponder+Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10990275A39A628B80142190C5A18E77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		1AF379FEB2DDB282AB03B5CD7634CC6C /* LYULibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 102725D1FA832D43F5DFE1B25A8872B0 /* LYULibrary-dummy.m */; };
 		21CAB4A74902611D9376DAEE0C77A063 /* Pods-LYULibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B218D995F29275AEA25FDE409DEA259 /* Pods-LYULibrary_Tests-dummy.m */; };
-		38A7879E0F1788B1362AAB87D1C1CB43 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 831F8EB41BEB552A65B19AEE3F2E8222 /* UIView+BlockGesture.m */; };
+		2B4FE89D4481525A5F31317E4AB81BDF /* LYUAppFluecyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BB9AFD7C373859A089F7F0345C5D70 /* LYUAppFluecyMonitor.m */; };
+		342BBD1F0A929CC1670DFFE4F60E0AB3 /* LYUConditionLock.h in Headers */ = {isa = PBXBuildFile; fileRef = C0F0C41EEA73F64C892C8394D89BB90B /* LYUConditionLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34F2427827FDBC0B24508BC1EFDD4D90 /* UIView+YLCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C048FACE90F1395025AEF79C9FB6A30C /* UIView+YLCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AD22484A1DE8179DB8FB1008ACCC271 /* LYUBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 107AD9710AF971467AF6FA229AC07782 /* LYUBacktraceLogger.m */; };
+		3DFC27F56427FA3DD4867C67CFB3A580 /* LYUMutexLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F96BCD13FD7B7A2584B557A41731869 /* LYUMutexLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		455DFF5C8932738ABE8087D229C956C0 /* LYUUserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2291DFA98A82271635E9F801133C8DF7 /* LYUUserCenter.m */; };
+		4A171DB6B363C20E668BDFCC96249A43 /* LYUMutexLock.m in Sources */ = {isa = PBXBuildFile; fileRef = BC31DBE21365076241E907E8BB393A10 /* LYUMutexLock.m */; };
 		4C56A453571BBBF83B9F35E924F42AB2 /* Pods-LYULibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A32DBF6DBB5625ADCAB592D54A1BD8 /* Pods-LYULibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FC9CF62D0DC6F308318913B211ABF0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		588170EB5E7C1FA33E192AB498E0DF05 /* UITextField+ModeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2433F793E5AE7C0CF946ED5CBB25F1 /* UITextField+ModeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A0E9C900CD5925A4111F13C54E4BB8E /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6D9CEA52EC1623E7115035E604D9D /* UITextField+Extension.m */; };
+		4F340A755EF372AF96775FB727653F77 /* UITextField+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4331812FFCDA4D7E22CF802E507082A3 /* UITextField+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FC9CF62D0DC6F308318913B211ABF0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		512943BC66AB086706405AEBC0378DD1 /* LYUSpinLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9312138D4AEF49F3B1A9097AD67BFD25 /* LYUSpinLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5334A59D83EDC2702F240C67F447DF80 /* UITextField+ModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3324CFFF882CD745C3826EFF2A01D3B1 /* UITextField+ModeView.m */; };
+		6569A0B005B7B9630725B48EC7AEF18D /* LYUTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D8012B60F2F21C5C91B38BEE241DC /* LYUTimer.m */; };
+		65D856210E693E1156638A1B586E093E /* LYUOSUnfairLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 722E59C0624595629FEAFDDD6D6340BA /* LYUOSUnfairLock.m */; };
+		6A99A2AFC585EA3A4C7FA38A1325DBB3 /* LYURecursiveMutexLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C0D4F69D9226281DD2635D7ED11362 /* LYURecursiveMutexLock.m */; };
+		6ACE930023C2873FE3C504B378D6480F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		6CDC2078C9F7B3B10CDC3A15CBD9C9ED /* LYUOSUnfairLock.h in Headers */ = {isa = PBXBuildFile; fileRef = EA91515A8CA89810F6C60DFA96C7EDBB /* LYUOSUnfairLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73A3A2CB9F6797D37F00BF226094FCB1 /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CE435B9ADA4029C2F486DCEF2DB38B /* UITextField+Extension.m */; };
+		7C1C3F2389DBCAD5AD00A23922701514 /* LYUClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B142522524C2FC9140CDA714FBFC78 /* LYUClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EFD1377DA13A3CB97AA5C78125D2329 /* LYULockProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB119482C772EF622A3FD6F42245CC2 /* LYULockProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		851069D70CC0D0CD2249634946C722F1 /* Pods-LYULibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52057C662E20450223963CF9E2A98813 /* Pods-LYULibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2F4451E12FB9A3E6D768170708B56B8 /* UITextField+ModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F256AE0CC2A32AE9B00E06AF67985D12 /* UITextField+ModeView.m */; };
-		A49C88A652958C2BCF6487F7DB19E810 /* UIResponder+Router.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B91C6C322347E5CB5EE2BE1236DAB5 /* UIResponder+Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B425A03DA352597BDCA6C9CD3C2F1E75 /* UITextField+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = BE38E110546D9E7C8BC14B76915EA915 /* UITextField+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8C8DDBF1D2BBF11617E06D697C9D372 /* LYULibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 561A114E84F7D3F6032985F27CF6721F /* LYULibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE9B10D00532B2E5341DA5C8C3CA1C24 /* UIView+YLCore.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8DC0EA46D3C489BD58C438406E278D /* UIView+YLCore.m */; };
-		C012646C16B16D195E79AFB7A6025C1F /* UIView+YLCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD8CD57A077C2AFC3F2990D0D85F0F1 /* UIView+YLCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C407CE354B6FC53D006CE64A66C48643 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEEA7D41B7C2FD258EA09008B5E94E1 /* UIResponder+Router.m */; };
-		E3728DA3E40403C096114B7CD2424F4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		F94856D4E643F170754851865D3B8D7C /* LYULibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4626E6FFBE3D4C2DD7E936244EB6DE05 /* LYULibrary-dummy.m */; };
+		8875E2DD484A0624A5A4D10ED22C526B /* LYUBacktraceLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 28AFBA78767825058AE073061A15B869 /* LYUBacktraceLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E018ED76E1DD33C3CD4D6941A74458D /* LYUSpinLock.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A0EB90EABD6194E8EE7C1548F1F24F /* LYUSpinLock.m */; };
+		8E6D1AB1D014CA5AA702E935E3A3C71A /* LYULockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B94070676169B2ED14B0C501E0F2C5 /* LYULockManager.m */; };
+		979013A582EC476677CB343D32D302B0 /* LYUTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6E5FD46952F029FB13B9576552FCCB /* LYUTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A078287F0C2CFB008EC5D4C9F12EC726 /* LYUPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = C642A24C32963298AE8FADBCC38E8FF2 /* LYUPermenantThread.m */; };
+		A0B83A6F0EAD3342A0FD3DF7C5BAC134 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207CC59698166C84CB5BACF0F5B5DC5 /* UIResponder+Router.m */; };
+		B10BA18FBA085211AAE766FB3E6DD456 /* UIView+BlockGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C312AFA8D1D6BF1CFF82B594B0FBA59 /* UIView+BlockGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1980CD83179696F26B12928C8F48091 /* LYUAppFluecyMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = EC57628D7F5DAB87C1ED841F90C825B7 /* LYUAppFluecyMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE4A7E58CA649939D113694AC310DC30 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F455C2464B11014B62E4B3634244A8 /* UIView+BlockGesture.m */; };
+		C21EDEBF4D484BECEEC66AA984217DFC /* LYUConditionLock.m in Sources */ = {isa = PBXBuildFile; fileRef = E3225497DE6E7320C7D668D0AE4F1219 /* LYUConditionLock.m */; };
+		C55279FE74A7115915665946DC313889 /* LYUPermenantThread.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFC25DA449EF65B96A6092BDE51B77A /* LYUPermenantThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7381CD09EAC0E8F4BA6F3A7AB11029F /* LYURecursiveMutexLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 545A5BB302E43007E8A0A663E0580D6A /* LYURecursiveMutexLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D83965A875E131F05B65FFDF19B9A930 /* LYUUserCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBCF75323BCADD33CB52007307D4096 /* LYUUserCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAB1B76395C2337C3E9ED4F5DBAD1E78 /* UIView+YLCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D771A77B1DBF7196D6A85EC01D53A05C /* UIView+YLCore.m */; };
+		F1C916385585171994E3F103922FB81D /* UITextField+ModeView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA370D12F6B7D18B02F57703863FE16 /* UITextField+ModeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F28EF286FB29651BB8A97D9062E5D583 /* LYULibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82F24BD146DB0180DF51D0B706616CF8 /* LYULibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5343E058015D016E0DD3FA37E3B1F88 /* LYULockManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 15458F652CC0CE5A841F437C1DB80905 /* LYULockManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA8C863AFE8B1E4DCFFEDEC8EEB4B05B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
 		FBB930E8D3E490F8F37E3C58516F8E73 /* Pods-LYULibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3156D2ABB54969209A444EDB54666582 /* Pods-LYULibrary_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +58,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EB9F585125454774FF9D1D5657907368;
+			remoteGlobalIDString = 44CFBEA0DD99C1FFCCFA1508CFF5B810;
 			remoteInfo = LYULibrary;
 		};
 		D41DFEFA05201362BBD380653DED1103 /* PBXContainerItemProxy */ = {
@@ -46,50 +71,75 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		060E54631C5F120B5D4D58EB3D0B3B0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		06B91C6C322347E5CB5EE2BE1236DAB5 /* UIResponder+Router.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
 		0E8E6C9D99289C2B98E667D1D956EFF5 /* Pods_LYULibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LYULibrary_Tests.framework; path = "Pods-LYULibrary_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EA6D9CEA52EC1623E7115035E604D9D /* UITextField+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
+		0FBCF75323BCADD33CB52007307D4096 /* LYUUserCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUUserCenter.h; sourceTree = "<group>"; };
+		102725D1FA832D43F5DFE1B25A8872B0 /* LYULibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LYULibrary-dummy.m"; sourceTree = "<group>"; };
+		107AD9710AF971467AF6FA229AC07782 /* LYUBacktraceLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUBacktraceLogger.m; sourceTree = "<group>"; };
+		15458F652CC0CE5A841F437C1DB80905 /* LYULockManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYULockManager.h; sourceTree = "<group>"; };
+		18262C9C890A6434D426EB73456DD84D /* LYULibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LYULibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1B218D995F29275AEA25FDE409DEA259 /* Pods-LYULibrary_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LYULibrary_Tests-dummy.m"; sourceTree = "<group>"; };
+		2291DFA98A82271635E9F801133C8DF7 /* LYUUserCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUUserCenter.m; sourceTree = "<group>"; };
 		2626F07711F4ED0ED2ED8BB008183784 /* LYULibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LYULibrary.framework; path = LYULibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AFBA78767825058AE073061A15B869 /* LYUBacktraceLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUBacktraceLogger.h; sourceTree = "<group>"; };
+		2A6E5FD46952F029FB13B9576552FCCB /* LYUTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUTimer.h; sourceTree = "<group>"; };
+		2AB119482C772EF622A3FD6F42245CC2 /* LYULockProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYULockProtocol.h; sourceTree = "<group>"; };
+		2B9D8012B60F2F21C5C91B38BEE241DC /* LYUTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUTimer.m; sourceTree = "<group>"; };
 		3156D2ABB54969209A444EDB54666582 /* Pods-LYULibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LYULibrary_Example-dummy.m"; sourceTree = "<group>"; };
+		3207CC59698166C84CB5BACF0F5B5DC5 /* UIResponder+Router.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
 		3293119326932E1B092EC7C757691E95 /* Pods-LYULibrary_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYULibrary_Tests-resources.sh"; sourceTree = "<group>"; };
-		42FF17B3F0436F17783B030E08FA2BA9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4626E6FFBE3D4C2DD7E936244EB6DE05 /* LYULibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LYULibrary-dummy.m"; sourceTree = "<group>"; };
-		4A7A2C738E1876BE53590454CA205010 /* LYULibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYULibrary-prefix.pch"; sourceTree = "<group>"; };
+		3324CFFF882CD745C3826EFF2A01D3B1 /* UITextField+ModeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ModeView.m"; sourceTree = "<group>"; };
+		4331812FFCDA4D7E22CF802E507082A3 /* UITextField+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
 		4E66A2355709BAF5D820671CC031255F /* Pods-LYULibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYULibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		52057C662E20450223963CF9E2A98813 /* Pods-LYULibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LYULibrary_Example-umbrella.h"; sourceTree = "<group>"; };
-		561A114E84F7D3F6032985F27CF6721F /* LYULibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYULibrary-umbrella.h"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		626F979E3DB7658794344040AD391A03 /* LYULibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYULibrary.xcconfig; sourceTree = "<group>"; };
-		6A2433F793E5AE7C0CF946ED5CBB25F1 /* UITextField+ModeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+ModeView.h"; sourceTree = "<group>"; };
+		545A5BB302E43007E8A0A663E0580D6A /* LYURecursiveMutexLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYURecursiveMutexLock.h; sourceTree = "<group>"; };
+		5C312AFA8D1D6BF1CFF82B594B0FBA59 /* UIView+BlockGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
+		69D846D3C1C5CF45494675175A95B67B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6AAE4B66E973AA5FD2BA9F7B18554EB6 /* UIResponder+Router.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		6B1DDCC510F0F5B7F86C8D48306045BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		722E59C0624595629FEAFDDD6D6340BA /* LYUOSUnfairLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUOSUnfairLock.m; sourceTree = "<group>"; };
+		73371B9E3D243CB46264C4B485F209DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		748243CBE41ADE4550ABE4817B5F2BF8 /* Pods-LYULibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LYULibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		74C0D4F69D9226281DD2635D7ED11362 /* LYURecursiveMutexLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYURecursiveMutexLock.m; sourceTree = "<group>"; };
 		75F137BA61BD96F04F08D1A22AAF4DDA /* Pods-LYULibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LYULibrary_Tests.modulemap"; sourceTree = "<group>"; };
 		81C6A3DBAAFFDAB0FD54B635D69DD2EB /* Pods-LYULibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYULibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		822525D98E8ED058BEEE848C3E23FEF0 /* Pods-LYULibrary_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYULibrary_Example-resources.sh"; sourceTree = "<group>"; };
-		831F8EB41BEB552A65B19AEE3F2E8222 /* UIView+BlockGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
+		82F24BD146DB0180DF51D0B706616CF8 /* LYULibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYULibrary-umbrella.h"; sourceTree = "<group>"; };
 		8C54DA0C9439DFBF29C94CD3A4C25E19 /* Pods-LYULibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LYULibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8F96BCD13FD7B7A2584B557A41731869 /* LYUMutexLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUMutexLock.h; sourceTree = "<group>"; };
+		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		92CE435B9ADA4029C2F486DCEF2DB38B /* UITextField+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
+		9312138D4AEF49F3B1A9097AD67BFD25 /* LYUSpinLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUSpinLock.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96C342688EDA7C132A5A597E3F13FE03 /* Pods_LYULibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LYULibrary_Example.framework; path = "Pods-LYULibrary_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99BB9AFD7C373859A089F7F0345C5D70 /* LYUAppFluecyMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUAppFluecyMonitor.m; sourceTree = "<group>"; };
+		9B220F6474DA527074A859CAE3C8126B /* LYULibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LYULibrary.modulemap; sourceTree = "<group>"; };
 		9CA684224ED2099CF6433ADFAF949065 /* Pods-LYULibrary_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYULibrary_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A940D33351B233440C734259F3675DBD /* Pods-LYULibrary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LYULibrary_Example.modulemap"; sourceTree = "<group>"; };
-		AE8DC0EA46D3C489BD58C438406E278D /* UIView+YLCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+YLCore.m"; sourceTree = "<group>"; };
-		B109ABAD56BF202210E79A1B35D89768 /* LYULibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LYULibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB8A0175449DAF59248F55DDAF92EA51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBD4E94B570124282E4A88B293F67A2C /* Pods-LYULibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYULibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BE38E110546D9E7C8BC14B76915EA915 /* UITextField+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
+		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BC31DBE21365076241E907E8BB393A10 /* LYUMutexLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUMutexLock.m; sourceTree = "<group>"; };
+		C048FACE90F1395025AEF79C9FB6A30C /* UIView+YLCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+YLCore.h"; sourceTree = "<group>"; };
+		C0F0C41EEA73F64C892C8394D89BB90B /* LYUConditionLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUConditionLock.h; sourceTree = "<group>"; };
 		C12ADC23BA8EA5A97B99DA5F5FB2FCC7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31AC64BA1F71AF2F83D237C426799B5 /* Pods-LYULibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYULibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C642A24C32963298AE8FADBCC38E8FF2 /* LYUPermenantThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUPermenantThread.m; sourceTree = "<group>"; };
+		C9A0EB90EABD6194E8EE7C1548F1F24F /* LYUSpinLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUSpinLock.m; sourceTree = "<group>"; };
 		CBAC74FEFA4F6E2E609D0674C33A3585 /* Pods-LYULibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYULibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CFD8CD57A077C2AFC3F2990D0D85F0F1 /* UIView+YLCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+YLCore.h"; sourceTree = "<group>"; };
-		CFEEA7D41B7C2FD258EA09008B5E94E1 /* UIResponder+Router.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
-		D966EF36F29F13355F45558FF5B7701F /* LYULibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LYULibrary.modulemap; sourceTree = "<group>"; };
+		D5B94070676169B2ED14B0C501E0F2C5 /* LYULockManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYULockManager.m; sourceTree = "<group>"; };
+		D771A77B1DBF7196D6A85EC01D53A05C /* UIView+YLCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+YLCore.m"; sourceTree = "<group>"; };
+		D8F455C2464B11014B62E4B3634244A8 /* UIView+BlockGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
 		DAEAA6D8E56020E805975AD2B03A39AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFA370D12F6B7D18B02F57703863FE16 /* UITextField+ModeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+ModeView.h"; sourceTree = "<group>"; };
+		E3225497DE6E7320C7D668D0AE4F1219 /* LYUConditionLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUConditionLock.m; sourceTree = "<group>"; };
 		E64BF1F6CF5980F5E72E81B50B8BC9D9 /* Pods-LYULibrary_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYULibrary_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		EA39416BAB3A8FB3856D01CF6F947420 /* UIView+BlockGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
-		F256AE0CC2A32AE9B00E06AF67985D12 /* UITextField+ModeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ModeView.m"; sourceTree = "<group>"; };
+		EA91515A8CA89810F6C60DFA96C7EDBB /* LYUOSUnfairLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUOSUnfairLock.h; sourceTree = "<group>"; };
+		EC57628D7F5DAB87C1ED841F90C825B7 /* LYUAppFluecyMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUAppFluecyMonitor.h; sourceTree = "<group>"; };
+		F24FE4D3232906E672ECE50A2783F264 /* LYULibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYULibrary.xcconfig; sourceTree = "<group>"; };
+		F3B142522524C2FC9140CDA714FBFC78 /* LYUClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUClassInfo.h; sourceTree = "<group>"; };
 		F5A32DBF6DBB5625ADCAB592D54A1BD8 /* Pods-LYULibrary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LYULibrary_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FACCEEBD6D3A8B903724314D704EDD81 /* Pods-LYULibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYULibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FB51C4741F3B2279E9003DB67726FF85 /* LYULibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYULibrary-prefix.pch"; sourceTree = "<group>"; };
+		FBFC25DA449EF65B96A6092BDE51B77A /* LYUPermenantThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUPermenantThread.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +151,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD5CB8541A30C012610A1FBC679F5564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACE930023C2873FE3C504B378D6480F /* Foundation.framework in Frameworks */,
+				FA8C863AFE8B1E4DCFFEDEC8EEB4B05B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D03A15E378869838024E23C477F1A0AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,47 +168,88 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE34BD77084D1E6F90D668A1F8EC6BD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3728DA3E40403C096114B7CD2424F4C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		163F752C12CCA3002C060A647FC4F004 /* Development Pods */ = {
+		058E94333A6048232CC1DCAB90B815F2 /* monitor */ = {
 			isa = PBXGroup;
 			children = (
-				9A6DC33CB9E0E21AD39529CD93F77887 /* LYULibrary */,
+				EC57628D7F5DAB87C1ED841F90C825B7 /* LYUAppFluecyMonitor.h */,
+				99BB9AFD7C373859A089F7F0345C5D70 /* LYUAppFluecyMonitor.m */,
+				56CE1175765FE1AAE447FE5D9F8D3ACB /* BackTrace */,
+			);
+			name = monitor;
+			path = monitor;
+			sourceTree = "<group>";
+		};
+		07E4E489F7E9AF665A790138B7C103DA /* classinfo */ = {
+			isa = PBXGroup;
+			children = (
+				F3B142522524C2FC9140CDA714FBFC78 /* LYUClassInfo.h */,
+			);
+			name = classinfo;
+			path = classinfo;
+			sourceTree = "<group>";
+		};
+		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
+				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		27ACAA332D9E3655410BEAFBCDF791E9 /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				FBFC25DA449EF65B96A6092BDE51B77A /* LYUPermenantThread.h */,
+				C642A24C32963298AE8FADBCC38E8FF2 /* LYUPermenantThread.m */,
+			);
+			name = thread;
+			path = thread;
+			sourceTree = "<group>";
+		};
+		27CCFD86AFBEA2CEA9E42CE23E2C229C /* UIView+BlockGesture */ = {
+			isa = PBXGroup;
+			children = (
+				5C312AFA8D1D6BF1CFF82B594B0FBA59 /* UIView+BlockGesture.h */,
+				D8F455C2464B11014B62E4B3634244A8 /* UIView+BlockGesture.m */,
+			);
+			name = "UIView+BlockGesture";
+			path = "UIView+BlockGesture";
+			sourceTree = "<group>";
+		};
+		2F2E8521A478153A59FFBEF5865A031A /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				6AAE4B66E973AA5FD2BA9F7B18554EB6 /* UIResponder+Router.h */,
+				3207CC59698166C84CB5BACF0F5B5DC5 /* UIResponder+Router.m */,
+			);
+			name = UIResponder;
+			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		345531772CEDCC900878E08849E2C5DB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F60C2EBA412D01D5642D81C361067DDD /* LYULibrary */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		306269CCEBA844C2313C6E12158247CA /* Support Files */ = {
+		3504E65DB87E99A1EFE1DA1C4E224418 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB8A0175449DAF59248F55DDAF92EA51 /* Info.plist */,
-				D966EF36F29F13355F45558FF5B7701F /* LYULibrary.modulemap */,
-				626F979E3DB7658794344040AD391A03 /* LYULibrary.xcconfig */,
-				4626E6FFBE3D4C2DD7E936244EB6DE05 /* LYULibrary-dummy.m */,
-				4A7A2C738E1876BE53590454CA205010 /* LYULibrary-prefix.pch */,
-				561A114E84F7D3F6032985F27CF6721F /* LYULibrary-umbrella.h */,
+				73371B9E3D243CB46264C4B485F209DD /* Info.plist */,
+				9B220F6474DA527074A859CAE3C8126B /* LYULibrary.modulemap */,
+				F24FE4D3232906E672ECE50A2783F264 /* LYULibrary.xcconfig */,
+				102725D1FA832D43F5DFE1B25A8872B0 /* LYULibrary-dummy.m */,
+				FB51C4741F3B2279E9003DB67726FF85 /* LYULibrary-prefix.pch */,
+				82F24BD146DB0180DF51D0B706616CF8 /* LYULibrary-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/LYULibrary";
-			sourceTree = "<group>";
-		};
-		306B77DE98600A00196D505169F7FBFF /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				060E54631C5F120B5D4D58EB3D0B3B0B /* LICENSE */,
-				B109ABAD56BF202210E79A1B35D89768 /* LYULibrary.podspec */,
-				42FF17B3F0436F17783B030E08FA2BA9 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		38FC65F8A73695DFAEC9900D538B1C2C /* Products */ = {
@@ -162,14 +262,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3EE3E9404ACB9D8FB1C663457438E0FC /* UIView+YLCore */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFD8CD57A077C2AFC3F2990D0D85F0F1 /* UIView+YLCore.h */,
-				AE8DC0EA46D3C489BD58C438406E278D /* UIView+YLCore.m */,
+				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
 			);
-			name = "UIView+YLCore";
-			path = "LYULibrary/Classes/UIView+YLCore";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		527A468517A3D47C55499AD295A786A0 /* Pods-LYULibrary_Tests */ = {
@@ -190,67 +288,81 @@
 			path = "Target Support Files/Pods-LYULibrary_Tests";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		5342DAED9D0D103C91EF4866B8C31C8A /* timer */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				2A6E5FD46952F029FB13B9576552FCCB /* LYUTimer.h */,
+				2B9D8012B60F2F21C5C91B38BEE241DC /* LYUTimer.m */,
 			);
-			name = iOS;
+			name = timer;
+			path = timer;
 			sourceTree = "<group>";
 		};
-		7063167A80DE35C7DD0CD2D93D62ADA2 /* UIResponder */ = {
+		55E3065DDD24C354CB0D4CF1CAB88E80 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				06B91C6C322347E5CB5EE2BE1236DAB5 /* UIResponder+Router.h */,
-				CFEEA7D41B7C2FD258EA09008B5E94E1 /* UIResponder+Router.m */,
+				2F2E8521A478153A59FFBEF5865A031A /* UIResponder */,
+				F94F83D6CC12C49F96A5B87142E1F358 /* UITextField+Extension */,
+				27CCFD86AFBEA2CEA9E42CE23E2C229C /* UIView+BlockGesture */,
+				7681A2C6A7E09824FA842FB1143E3E19 /* UIView+YLCore */,
 			);
-			name = UIResponder;
-			path = LYULibrary/Classes/UIResponder;
+			name = UIKit;
+			path = LYULibrary/Classes/UIKit;
+			sourceTree = "<group>";
+		};
+		56CE1175765FE1AAE447FE5D9F8D3ACB /* BackTrace */ = {
+			isa = PBXGroup;
+			children = (
+				28AFBA78767825058AE073061A15B869 /* LYUBacktraceLogger.h */,
+				107AD9710AF971467AF6FA229AC07782 /* LYUBacktraceLogger.m */,
+			);
+			name = BackTrace;
+			path = BackTrace;
+			sourceTree = "<group>";
+		};
+		595597E84CF200F00E214D391311A0A0 /* usercenter */ = {
+			isa = PBXGroup;
+			children = (
+				0FBCF75323BCADD33CB52007307D4096 /* LYUUserCenter.h */,
+				2291DFA98A82271635E9F801133C8DF7 /* LYUUserCenter.m */,
+			);
+			name = usercenter;
+			path = usercenter;
+			sourceTree = "<group>";
+		};
+		7681A2C6A7E09824FA842FB1143E3E19 /* UIView+YLCore */ = {
+			isa = PBXGroup;
+			children = (
+				C048FACE90F1395025AEF79C9FB6A30C /* UIView+YLCore.h */,
+				D771A77B1DBF7196D6A85EC01D53A05C /* UIView+YLCore.m */,
+			);
+			name = "UIView+YLCore";
+			path = "UIView+YLCore";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				163F752C12CCA3002C060A647FC4F004 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				345531772CEDCC900878E08849E2C5DB /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				38FC65F8A73695DFAEC9900D538B1C2C /* Products */,
 				BC9BA3798E604E5F9B9D5E3175A328FD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		91D37B42FE7CCDC2E08E5B397382F85A /* UITextField+Extension */ = {
+		7FF6829D38D858AD4E3A9D52836C6B76 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				BE38E110546D9E7C8BC14B76915EA915 /* UITextField+Extension.h */,
-				0EA6D9CEA52EC1623E7115035E604D9D /* UITextField+Extension.m */,
-				6A2433F793E5AE7C0CF946ED5CBB25F1 /* UITextField+ModeView.h */,
-				F256AE0CC2A32AE9B00E06AF67985D12 /* UITextField+ModeView.m */,
+				07E4E489F7E9AF665A790138B7C103DA /* classinfo */,
+				C4A77A718D09A395BC8618E73E36C441 /* lock */,
+				058E94333A6048232CC1DCAB90B815F2 /* monitor */,
+				27ACAA332D9E3655410BEAFBCDF791E9 /* thread */,
+				5342DAED9D0D103C91EF4866B8C31C8A /* timer */,
+				595597E84CF200F00E214D391311A0A0 /* usercenter */,
 			);
-			name = "UITextField+Extension";
-			path = "LYULibrary/Classes/UITextField+Extension";
-			sourceTree = "<group>";
-		};
-		9A6DC33CB9E0E21AD39529CD93F77887 /* LYULibrary */ = {
-			isa = PBXGroup;
-			children = (
-				306B77DE98600A00196D505169F7FBFF /* Pod */,
-				306269CCEBA844C2313C6E12158247CA /* Support Files */,
-				7063167A80DE35C7DD0CD2D93D62ADA2 /* UIResponder */,
-				91D37B42FE7CCDC2E08E5B397382F85A /* UITextField+Extension */,
-				DBB521D0921D1670DE6BBAAD3AB892A1 /* UIView+BlockGesture */,
-				3EE3E9404ACB9D8FB1C663457438E0FC /* UIView+YLCore */,
-			);
-			name = LYULibrary;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
+			name = Tools;
+			path = LYULibrary/Classes/Tools;
 			sourceTree = "<group>";
 		};
 		BC9BA3798E604E5F9B9D5E3175A328FD /* Targets Support Files */ = {
@@ -262,14 +374,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		DBB521D0921D1670DE6BBAAD3AB892A1 /* UIView+BlockGesture */ = {
+		C4A77A718D09A395BC8618E73E36C441 /* lock */ = {
 			isa = PBXGroup;
 			children = (
-				EA39416BAB3A8FB3856D01CF6F947420 /* UIView+BlockGesture.h */,
-				831F8EB41BEB552A65B19AEE3F2E8222 /* UIView+BlockGesture.m */,
+				C0F0C41EEA73F64C892C8394D89BB90B /* LYUConditionLock.h */,
+				E3225497DE6E7320C7D668D0AE4F1219 /* LYUConditionLock.m */,
+				15458F652CC0CE5A841F437C1DB80905 /* LYULockManager.h */,
+				D5B94070676169B2ED14B0C501E0F2C5 /* LYULockManager.m */,
+				2AB119482C772EF622A3FD6F42245CC2 /* LYULockProtocol.h */,
+				8F96BCD13FD7B7A2584B557A41731869 /* LYUMutexLock.h */,
+				BC31DBE21365076241E907E8BB393A10 /* LYUMutexLock.m */,
+				EA91515A8CA89810F6C60DFA96C7EDBB /* LYUOSUnfairLock.h */,
+				722E59C0624595629FEAFDDD6D6340BA /* LYUOSUnfairLock.m */,
+				545A5BB302E43007E8A0A663E0580D6A /* LYURecursiveMutexLock.h */,
+				74C0D4F69D9226281DD2635D7ED11362 /* LYURecursiveMutexLock.m */,
+				9312138D4AEF49F3B1A9097AD67BFD25 /* LYUSpinLock.h */,
+				C9A0EB90EABD6194E8EE7C1548F1F24F /* LYUSpinLock.m */,
 			);
-			name = "UIView+BlockGesture";
-			path = "LYULibrary/Classes/UIView+BlockGesture";
+			name = lock;
+			path = lock;
+			sourceTree = "<group>";
+		};
+		DE6EA6014BC89A2BA66B29171D59B9C9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				69D846D3C1C5CF45494675175A95B67B /* LICENSE */,
+				18262C9C890A6434D426EB73456DD84D /* LYULibrary.podspec */,
+				6B1DDCC510F0F5B7F86C8D48306045BC /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		EC28F31FAB3A0714F676AA1204131055 /* Pods-LYULibrary_Example */ = {
@@ -290,19 +423,56 @@
 			path = "Target Support Files/Pods-LYULibrary_Example";
 			sourceTree = "<group>";
 		};
+		F60C2EBA412D01D5642D81C361067DDD /* LYULibrary */ = {
+			isa = PBXGroup;
+			children = (
+				DE6EA6014BC89A2BA66B29171D59B9C9 /* Pod */,
+				3504E65DB87E99A1EFE1DA1C4E224418 /* Support Files */,
+				7FF6829D38D858AD4E3A9D52836C6B76 /* Tools */,
+				55E3065DDD24C354CB0D4CF1CAB88E80 /* UIKit */,
+			);
+			name = LYULibrary;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F94F83D6CC12C49F96A5B87142E1F358 /* UITextField+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4331812FFCDA4D7E22CF802E507082A3 /* UITextField+Extension.h */,
+				92CE435B9ADA4029C2F486DCEF2DB38B /* UITextField+Extension.m */,
+				DFA370D12F6B7D18B02F57703863FE16 /* UITextField+ModeView.h */,
+				3324CFFF882CD745C3826EFF2A01D3B1 /* UITextField+ModeView.m */,
+			);
+			name = "UITextField+Extension";
+			path = "UITextField+Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5E69C66EA8D2327D20B46F987A313077 /* Headers */ = {
+		35AF85D2C4C2397CC6FFBB46CC312D77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C8DDBF1D2BBF11617E06D697C9D372 /* LYULibrary-umbrella.h in Headers */,
-				A49C88A652958C2BCF6487F7DB19E810 /* UIResponder+Router.h in Headers */,
-				B425A03DA352597BDCA6C9CD3C2F1E75 /* UITextField+Extension.h in Headers */,
-				588170EB5E7C1FA33E192AB498E0DF05 /* UITextField+ModeView.h in Headers */,
-				051B672EE84C902201EFB538E4A01AD0 /* UIView+BlockGesture.h in Headers */,
-				C012646C16B16D195E79AFB7A6025C1F /* UIView+YLCore.h in Headers */,
+				B1980CD83179696F26B12928C8F48091 /* LYUAppFluecyMonitor.h in Headers */,
+				8875E2DD484A0624A5A4D10ED22C526B /* LYUBacktraceLogger.h in Headers */,
+				7C1C3F2389DBCAD5AD00A23922701514 /* LYUClassInfo.h in Headers */,
+				342BBD1F0A929CC1670DFFE4F60E0AB3 /* LYUConditionLock.h in Headers */,
+				F28EF286FB29651BB8A97D9062E5D583 /* LYULibrary-umbrella.h in Headers */,
+				F5343E058015D016E0DD3FA37E3B1F88 /* LYULockManager.h in Headers */,
+				7EFD1377DA13A3CB97AA5C78125D2329 /* LYULockProtocol.h in Headers */,
+				3DFC27F56427FA3DD4867C67CFB3A580 /* LYUMutexLock.h in Headers */,
+				6CDC2078C9F7B3B10CDC3A15CBD9C9ED /* LYUOSUnfairLock.h in Headers */,
+				C55279FE74A7115915665946DC313889 /* LYUPermenantThread.h in Headers */,
+				C7381CD09EAC0E8F4BA6F3A7AB11029F /* LYURecursiveMutexLock.h in Headers */,
+				512943BC66AB086706405AEBC0378DD1 /* LYUSpinLock.h in Headers */,
+				979013A582EC476677CB343D32D302B0 /* LYUTimer.h in Headers */,
+				D83965A875E131F05B65FFDF19B9A930 /* LYUUserCenter.h in Headers */,
+				0B3AFDF203F93263C20330051F329622 /* UIResponder+Router.h in Headers */,
+				4F340A755EF372AF96775FB727653F77 /* UITextField+Extension.h in Headers */,
+				F1C916385585171994E3F103922FB81D /* UITextField+ModeView.h in Headers */,
+				B10BA18FBA085211AAE766FB3E6DD456 /* UIView+BlockGesture.h in Headers */,
+				34F2427827FDBC0B24508BC1EFDD4D90 /* UIView+YLCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +495,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		44CFBEA0DD99C1FFCCFA1508CFF5B810 /* LYULibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB8DAA497E44330C16DD930F32F14DD /* Build configuration list for PBXNativeTarget "LYULibrary" */;
+			buildPhases = (
+				0648915987C7912B24E5A91C6F2A7C9E /* Sources */,
+				BD5CB8541A30C012610A1FBC679F5564 /* Frameworks */,
+				35AF85D2C4C2397CC6FFBB46CC312D77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYULibrary;
+			productName = LYULibrary;
+			productReference = 2626F07711F4ED0ED2ED8BB008183784 /* LYULibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		A3088C454E8EBADAC0795D03722897E9 /* Pods-LYULibrary_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE90E7A104CBD0CF10D48B3496ED0B77 /* Build configuration list for PBXNativeTarget "Pods-LYULibrary_Example" */;
@@ -361,23 +548,6 @@
 			productReference = 0E8E6C9D99289C2B98E667D1D956EFF5 /* Pods_LYULibrary_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EB9F585125454774FF9D1D5657907368 /* LYULibrary */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DAE95FCB6D82829DAA546CC96E9D6840 /* Build configuration list for PBXNativeTarget "LYULibrary" */;
-			buildPhases = (
-				38E57977F114ED5CB0C391F80E7C40EA /* Sources */,
-				EE34BD77084D1E6F90D668A1F8EC6BD8 /* Frameworks */,
-				5E69C66EA8D2327D20B46F987A313077 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LYULibrary;
-			productName = LYULibrary;
-			productReference = 2626F07711F4ED0ED2ED8BB008183784 /* LYULibrary.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -399,7 +569,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB9F585125454774FF9D1D5657907368 /* LYULibrary */,
+				44CFBEA0DD99C1FFCCFA1508CFF5B810 /* LYULibrary */,
 				A3088C454E8EBADAC0795D03722897E9 /* Pods-LYULibrary_Example */,
 				C62BDE0A97ABABD0346EECD0197258FC /* Pods-LYULibrary_Tests */,
 			);
@@ -407,16 +577,27 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		38E57977F114ED5CB0C391F80E7C40EA /* Sources */ = {
+		0648915987C7912B24E5A91C6F2A7C9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94856D4E643F170754851865D3B8D7C /* LYULibrary-dummy.m in Sources */,
-				C407CE354B6FC53D006CE64A66C48643 /* UIResponder+Router.m in Sources */,
-				6A0E9C900CD5925A4111F13C54E4BB8E /* UITextField+Extension.m in Sources */,
-				A2F4451E12FB9A3E6D768170708B56B8 /* UITextField+ModeView.m in Sources */,
-				38A7879E0F1788B1362AAB87D1C1CB43 /* UIView+BlockGesture.m in Sources */,
-				BE9B10D00532B2E5341DA5C8C3CA1C24 /* UIView+YLCore.m in Sources */,
+				2B4FE89D4481525A5F31317E4AB81BDF /* LYUAppFluecyMonitor.m in Sources */,
+				3AD22484A1DE8179DB8FB1008ACCC271 /* LYUBacktraceLogger.m in Sources */,
+				C21EDEBF4D484BECEEC66AA984217DFC /* LYUConditionLock.m in Sources */,
+				1AF379FEB2DDB282AB03B5CD7634CC6C /* LYULibrary-dummy.m in Sources */,
+				8E6D1AB1D014CA5AA702E935E3A3C71A /* LYULockManager.m in Sources */,
+				4A171DB6B363C20E668BDFCC96249A43 /* LYUMutexLock.m in Sources */,
+				65D856210E693E1156638A1B586E093E /* LYUOSUnfairLock.m in Sources */,
+				A078287F0C2CFB008EC5D4C9F12EC726 /* LYUPermenantThread.m in Sources */,
+				6A99A2AFC585EA3A4C7FA38A1325DBB3 /* LYURecursiveMutexLock.m in Sources */,
+				8E018ED76E1DD33C3CD4D6941A74458D /* LYUSpinLock.m in Sources */,
+				6569A0B005B7B9630725B48EC7AEF18D /* LYUTimer.m in Sources */,
+				455DFF5C8932738ABE8087D229C956C0 /* LYUUserCenter.m in Sources */,
+				A0B83A6F0EAD3342A0FD3DF7C5BAC134 /* UIResponder+Router.m in Sources */,
+				73A3A2CB9F6797D37F00BF226094FCB1 /* UITextField+Extension.m in Sources */,
+				5334A59D83EDC2702F240C67F447DF80 /* UITextField+ModeView.m in Sources */,
+				BE4A7E58CA649939D113694AC310DC30 /* UIView+BlockGesture.m in Sources */,
+				DAB1B76395C2337C3E9ED4F5DBAD1E78 /* UIView+YLCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +623,7 @@
 		9E5F3CA046BE1BD2D947F8484254BB03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LYULibrary;
-			target = EB9F585125454774FF9D1D5657907368 /* LYULibrary */;
+			target = 44CFBEA0DD99C1FFCCFA1508CFF5B810 /* LYULibrary */;
 			targetProxy = 68882C84A5EEDFBFCCE7CFF6C14D2480 /* PBXContainerItemProxy */;
 		};
 		EF8EC45A9F18EC81C8E6A45686515541 /* PBXTargetDependency */ = {
@@ -584,9 +765,9 @@
 			};
 			name = Release;
 		};
-		68C4CAA76DF14C300D30F4C362620425 /* Release */ = {
+		5B3AAA679BC81A7D3BE0FF84845E2DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 626F979E3DB7658794344040AD391A03 /* LYULibrary.xcconfig */;
+			baseConfigurationReference = F24FE4D3232906E672ECE50A2783F264 /* LYULibrary.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -609,11 +790,10 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		8AF4E42DC0924E8A0C56A82BDA0A605C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -649,9 +829,9 @@
 			};
 			name = Release;
 		};
-		9E4CABD800B73859FE0C71522062B6DE /* Debug */ = {
+		E9B6F6003E0C4C236E85CEB554AAF5BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 626F979E3DB7658794344040AD391A03 /* LYULibrary.xcconfig */;
+			baseConfigurationReference = F24FE4D3232906E672ECE50A2783F264 /* LYULibrary.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -674,10 +854,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		F1FD40B622F7DAA93EF913CE864F50AC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -782,6 +963,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6BB8DAA497E44330C16DD930F32F14DD /* Build configuration list for PBXNativeTarget "LYULibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B3AAA679BC81A7D3BE0FF84845E2DD0 /* Debug */,
+				E9B6F6003E0C4C236E85CEB554AAF5BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A440105D2FF4E64D5B83AD28E80CCAFB /* Build configuration list for PBXNativeTarget "Pods-LYULibrary_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -796,15 +986,6 @@
 			buildConfigurations = (
 				F1FD40B622F7DAA93EF913CE864F50AC /* Debug */,
 				508D2518A367C62D5A3B3EECEAF0D0A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DAE95FCB6D82829DAA546CC96E9D6840 /* Build configuration list for PBXNativeTarget "LYULibrary" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9E4CABD800B73859FE0C71522062B6DE /* Debug */,
-				68C4CAA76DF14C300D30F4C362620425 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
