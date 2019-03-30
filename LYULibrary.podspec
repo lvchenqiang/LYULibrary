@@ -24,18 +24,18 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/lvchenqiang/LYULibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lvchenqiang' => 'lvchenqiang@ellabook.cn' }
+  s.author           = { 'lvchenqiang' => 'lvchenqiang@gmail.cn' }
   s.source           = { :git => 'https://github.com/lvchenqiang/LYULibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'LYULibrary/Classes/**/*'
-  
+  s.libraries = "z", "c++"
   # s.resource_bundles = {
   #   'LYULibrary' => ['LYULibrary/Assets/*.png']
   # }
-
+  s.requires_arc = true  #工程是否用arc规则
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'

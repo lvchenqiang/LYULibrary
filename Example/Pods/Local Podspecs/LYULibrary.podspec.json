@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "lvchenqiang": "lvchenqiang@ellabook.cn"
+    "lvchenqiang": "lvchenqiang@gmail.cn"
   },
   "source": {
     "git": "https://github.com/lvchenqiang/LYULibrary.git",
@@ -19,5 +19,10 @@
     "ios": "8.0"
   },
   "source_files": "LYULibrary/Classes/**/*",
+  "libraries": [
+    "z",
+    "c++"
+  ],
+  "requires_arc": true,
   "frameworks": "UIKit"
 }

@@ -5,6 +5,7 @@
 //  Copyright © 2019 LYUKit. All rights reserved.
 //
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 #ifndef LYUClassInfo_h
 #define LYUClassInfo_h
