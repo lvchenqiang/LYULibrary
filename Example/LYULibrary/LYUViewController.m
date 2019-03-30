@@ -7,7 +7,7 @@
 //
 
 #import "LYUViewController.h"
-#import "LYUClassInfo.h"
+//#import "LYUClassInfo.h"
 
 @interface LYUViewController ()
 
