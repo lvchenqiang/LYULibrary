@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LYULockProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
-
+API_AVAILABLE(ios(10.0))
 @interface LYUOSUnfairLock : NSObject<LYULockProtocol>
 - (void)lock;
 - (void)unlock;

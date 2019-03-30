@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "LYUClassInfo.h"
 #import "LYUConditionLock.h"
 #import "LYULockManager.h"
 #import "LYULockProtocol.h"

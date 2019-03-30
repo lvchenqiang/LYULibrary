@@ -33,21 +33,20 @@
 
 - (void)executeTask:(LYULockTask)task
 {
-    [self.locker lock];
-    
-    task();
-    
-    [self.locker unlock];
+    [self executeTask:task lockType:LYULockTypeMutex];
 }
 
 - (void)executeTask:(LYULockTask)task lockType:(LYULockType)type
 {
     switch (type) {
             case LYULockTypeOs_Unfair_Lock:
-            if(!_locker || [self.locker isMemberOfClass:[LYUOSUnfairLock class]] ){
-                self.locker = nil;
-                self.locker = [[LYUOSUnfairLock alloc] init];
+            if(@available(iOS 10.0, *)){
+                if(!_locker || [self.locker isMemberOfClass:[LYUOSUnfairLock class]] ){
+                    self.locker = nil;
+                    self.locker = [[LYUOSUnfairLock alloc] init];
+                }
             }
+          
             break;
             
             case LYULockTypeMutex:

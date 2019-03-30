@@ -19,6 +19,7 @@
     "ios": "8.0"
   },
   "source_files": "LYULibrary/Classes/**/*",
+  "exclude_files": "Classes/Exclude",
   "libraries": [
     "z",
     "c++"
