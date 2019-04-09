@@ -39,9 +39,6 @@
                 vvv.backgroundColor = LRRandomColor;
                 vvv.alpha = 0.5;
                 [self.view addSubview:vvv];
-                
-                
-                
             } async:true];
             
         });
