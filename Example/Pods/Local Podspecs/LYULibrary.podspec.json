@@ -20,10 +20,6 @@
   },
   "source_files": "LYULibrary/Classes/**/*",
   "exclude_files": "Classes/Exclude",
-  "libraries": [
-    "z",
-    "c++"
-  ],
   "requires_arc": true,
   "frameworks": "UIKit"
 }

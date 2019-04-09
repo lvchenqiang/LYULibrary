@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'LYULibrary/Classes/**/*'
 
   s.exclude_files = "Classes/Exclude"  #工程不需要引入的文件
-  s.libraries = "z", "c++"
+  # s.libraries = "z", "c++"
   # s.resource_bundles = {
   #   'LYULibrary' => ['LYULibrary/Assets/*.png']
   # }
