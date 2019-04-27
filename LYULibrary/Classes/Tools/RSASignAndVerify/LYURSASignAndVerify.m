@@ -8,6 +8,10 @@
 
 #import "LYURSASignAndVerify.h"
 #import <CommonCrypto/CommonCrypto.h>
+
+#define kRSA_KEY_SIZE 1024
+
+
 @implementation LYURSASignAndVerify
 
 //+ (NSString *)unwrapPublicKey:(NSString *)pubkey
@@ -141,4 +145,36 @@
     else{ NSLog(@"验签失败:%d",status); return NO; }
 }
 
++(NSString *)encryptContent:(NSString *)content withPubKey:(NSString *)publicKey;
+{
+    SecKeyRef publicKeyRef = [self addPublicKey:publicKey];
+     if (!publicKeyRef) { NSLog(@"添加公钥失败"); return nil; }
+    
+     uint8_t encData[kRSA_KEY_SIZE/8] = {0};
+    size_t blockSize = kRSA_KEY_SIZE / 8 ;
+    NSData *sha1Data = [self sha1:content];
+
+    OSStatus status = SecKeyEncrypt(publicKeyRef, kSecPaddingPKCS1SHA1, [sha1Data bytes], [sha1Data length], encData, &blockSize);
+    if (status == noErr) { return  [[NSString  alloc] initWithData: [NSData dataWithBytes:encData length:blockSize] encoding:NSUTF8StringEncoding]; }else {
+        return nil;
+    }
+    
+}
+
++(NSString *)decryptContent:(NSString *)content withPriKey:(NSString *)privateKey
+{
+    SecKeyRef privateKeyRef = [self addPrivateKey:privateKey];
+    if (!privateKeyRef) { NSLog(@"添加私钥失败"); return  nil; }
+    
+    NSData * data = [[NSData alloc] initWithBase64EncodedString:content options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    
+    uint8_t decData[kRSA_KEY_SIZE/8] = {0};
+    size_t blockSize = kRSA_KEY_SIZE / 8 ;
+    
+    
+    OSStatus status = SecKeyDecrypt(privateKeyRef, kSecPaddingPKCS1SHA1, data.bytes, [data length], decData, &blockSize);
+    if(status == noErr){
+        return [[NSString  alloc] initWithData: [NSData dataWithBytes:decData length:blockSize] encoding:NSUTF8StringEncoding];
+    }else{ return nil;}
+}
 @end

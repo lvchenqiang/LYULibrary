@@ -48,8 +48,23 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYURSASignAndVerify : NSObject
+
+
+
+
 + (NSString *)sign:(NSString *)content withPriKey:(NSString *)priKey;
 + (BOOL)verify:(NSString *)content signature:(NSString *)signature withPublivKey:(NSString *)publicKey;
+
+
+
+
+
+
++(NSString *)encryptContent:(NSString *)content withPubKey:(NSString *)publicKey;
+
++(NSString *)decryptContent:(NSString *)content withPriKey:(NSString *)privateKey;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
