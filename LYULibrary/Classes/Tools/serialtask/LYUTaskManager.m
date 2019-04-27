@@ -90,7 +90,7 @@ static LYUTaskManager * _sharedManager = nil;
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
-    dispatch_semaphore_wait(semaphore_p, DISPATCH_TIME_FOREVER);
+//    dispatch_semaphore_wait(semaphore_p, DISPATCH_TIME_FOREVER);
     
     if([LYUTaskManager sharedManager].tasks.count){ /// 当前任务队列存在任务
         bool taskRun = true; /// 任务是否可以执行
@@ -157,7 +157,7 @@ static LYUTaskManager * _sharedManager = nil;
        
     }
     
- dispatch_semaphore_signal(semaphore_p);
+// dispatch_semaphore_signal(semaphore_p);
         
          });
     
