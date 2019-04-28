@@ -152,9 +152,9 @@
     
      uint8_t encData[kRSA_KEY_SIZE/8] = {0};
     size_t blockSize = kRSA_KEY_SIZE / 8 ;
-    NSData *sha1Data = [self sha1:content];
+    NSData *sha1Data = [[NSData alloc] initWithBase64EncodedString:content options:NSDataBase64DecodingIgnoreUnknownCharacters];
 
-    OSStatus status = SecKeyEncrypt(publicKeyRef, kSecPaddingPKCS1SHA1, [sha1Data bytes], [sha1Data length], encData, &blockSize);
+    OSStatus status = SecKeyEncrypt(publicKeyRef, kSecPaddingNone, [sha1Data bytes], [sha1Data length], encData, &blockSize);
     if (status == noErr) { return  [[NSString  alloc] initWithData: [NSData dataWithBytes:encData length:blockSize] encoding:NSUTF8StringEncoding]; }else {
         return nil;
     }
@@ -172,7 +172,7 @@
     size_t blockSize = kRSA_KEY_SIZE / 8 ;
     
     
-    OSStatus status = SecKeyDecrypt(privateKeyRef, kSecPaddingPKCS1SHA1, data.bytes, [data length], decData, &blockSize);
+    OSStatus status = SecKeyDecrypt(privateKeyRef, kSecPaddingNone, data.bytes, [data length], decData, &blockSize);
     if(status == noErr){
         return [[NSString  alloc] initWithData: [NSData dataWithBytes:decData length:blockSize] encoding:NSUTF8StringEncoding];
     }else{ return nil;}

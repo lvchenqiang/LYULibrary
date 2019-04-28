@@ -2,8 +2,8 @@
 //  LVGrandHeader.h
 //  Category
 //
-//  Created by apple on 16/9/19.
-//  Copyright © 2016年 qingxunLv. All rights reserved.
+//  Created by Micah on 16/9/19.
+//  Copyright © 2016年 lvchenqiang. All rights reserved.
 //
 
 #ifndef LVGrandHeader_h

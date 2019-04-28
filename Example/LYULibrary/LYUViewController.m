@@ -12,7 +12,8 @@
 #import "LYUView.h"
 #import "LYURSASignAndVerify.h"
 #import "NSString+AES256.h"
-
+#import "NSObject+Reflection.h"
+#import <objc/runtime.h>
 //设置随机的颜色
 #define LRRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
 
@@ -27,9 +28,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    NSLog(@"%@----%@",[LYURSASignAndVerify instanceMethodList], [LYURSASignAndVerify classMethodList]);
     
-    [self testEncrpt];
+    
+//    [self testEncrpt];
     
 }
 
@@ -81,6 +83,11 @@
     
     // 明文
     NSString *plainText = @"你好,world!";
+    
+
+    
+    
+
     // AES加密后的密文
     NSString *cipherTextByAES = [plainText aes256_encryptWithKey:aeskey];
     // 签名

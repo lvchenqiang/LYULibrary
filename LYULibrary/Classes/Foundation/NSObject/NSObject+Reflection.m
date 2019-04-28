@@ -135,19 +135,7 @@
     
     return array;
 }
--(NSArray*)methodList{
-    u_int               count;
-    NSMutableArray *methodList = [NSMutableArray array];
-    Method *methods= class_copyMethodList([self class], &count);
-    for (int i = 0; i < count ; i++)
-    {
-        SEL name = method_getName(methods[i]);
-        NSString *strName = [NSString  stringWithCString:sel_getName(name) encoding:NSUTF8StringEncoding];
-        [methodList addObject:strName];
-    }
-    free(methods);
-    return methodList;
-}
+
 -(NSArray*)methodListInfo{
     u_int               count;
     NSMutableArray *methodList = [NSMutableArray array];
@@ -189,10 +177,14 @@
     free(methods);
     return methodList;
 }
-+(NSArray*)methodList{
+
+//方法列表
++(NSArray*)instanceMethodList{
     u_int               count;
     NSMutableArray *methodList = [NSMutableArray array];
-    Method * methods= class_copyMethodList([self class], &count);
+    
+    Method * methods= class_copyMethodList([self  class], &count);
+    
     for (int i = 0; i < count ; i++)
     {
         SEL name = method_getName(methods[i]);
@@ -200,9 +192,29 @@
         [methodList addObject:strName];
     }
     free(methods);
-
+    
     return methodList;
 }
+
++(NSArray*)classMethodList
+{
+    
+    u_int               count;
+    NSMutableArray *methodList = [NSMutableArray array];
+    
+    Method * methods= class_copyMethodList(object_getClass([self  class]), &count);
+    
+    for (int i = 0; i < count ; i++)
+    {
+        SEL name = method_getName(methods[i]);
+        NSString *strName = [NSString  stringWithCString:sel_getName(name) encoding:NSUTF8StringEncoding];
+        [methodList addObject:strName];
+    }
+    free(methods);
+    
+    return methodList;
+}
+
 //创建并返回一个指向所有已注册类的指针列表
 + (NSArray *)registedClassList
 {
@@ -227,15 +239,50 @@
  *
  *  @return 协议列表信息
  */
--(NSDictionary *)protocolList{
-    return [[self class]protocolList];
-}
-+ (NSDictionary *)protocolList
+//协议列表
++(NSDictionary *)instanceProtocolList
 {
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     
     unsigned int count;
     Protocol * __unsafe_unretained * protocols = class_copyProtocolList([self class], &count);
+    for (int i = 0; i < count; i++)
+    {
+        Protocol *protocol = protocols[i];
+        
+        NSString *protocolName = [NSString stringWithCString:protocol_getName(protocol) encoding:NSUTF8StringEncoding];
+        
+        NSMutableArray *superProtocolArray = ({
+            
+            NSMutableArray *array = [NSMutableArray array];
+            
+            unsigned int superProtocolCount;
+            Protocol * __unsafe_unretained * superProtocols = protocol_copyProtocolList(protocol, &superProtocolCount);
+            for (int ii = 0; ii < superProtocolCount; ii++)
+            {
+                Protocol *superProtocol = superProtocols[ii];
+                
+                NSString *superProtocolName = [NSString stringWithCString:protocol_getName(superProtocol) encoding:NSUTF8StringEncoding];
+                
+                [array addObject:superProtocolName];
+            }
+            free(superProtocols);
+            
+            array;
+        });
+        
+        [dictionary setObject:superProtocolArray forKey:protocolName];
+    }
+    free(protocols);
+    
+    return dictionary;
+}
++ (NSDictionary *)classProtocolList
+{
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    
+    unsigned int count;
+    Protocol * __unsafe_unretained * protocols = class_copyProtocolList(object_getClass([self class]), &count);
     for (int i = 0; i < count; i++)
     {
         Protocol *protocol = protocols[i];

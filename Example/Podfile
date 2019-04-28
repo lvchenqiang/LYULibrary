@@ -1,7 +1,7 @@
 use_frameworks!
 
 platform :ios, '8.0'
-
+install! 'cocoapods', :deterministic_uuids => false
 target 'LYULibrary_Example' do
   pod 'LYULibrary', :path => '../'
 
