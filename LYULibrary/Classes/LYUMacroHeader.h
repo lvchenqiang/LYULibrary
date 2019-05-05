@@ -110,11 +110,38 @@
 
 
 
+//弃用API，用作API更新
+#define __deprecated    __attribute__((deprecated))
+
+//带描述信息的弃用
+#define __deprecated_msg(_msg) __attribute__((deprecated(_msg)))
+
+//遇到__unavailable的变量/方法，编译器直接抛出Error
+#define __unavailable    __attribute__((unavailable))
+
+//告诉编译器，即使这个变量/方法 没被使用，也不要抛出警告
+#define __unused    __attribute__((unused))
+
+//和__unused相反
+#define __used        __attribute__((used))
+
+//如果不使用方法的返回值，进行警告
+#define __result_use_check __attribute__((__warn_unused_result__))
+
+//OC方法在Swift中不可用
+#define __swift_unavailable(_msg)    __attribute__((__availability__(swift, unavailable, message=_msg)))
+
+
+
+/// /  Clang警告处理
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+///代码
+#pragma clang diagnostic pop
 
 
 
 
-
-
-
+//  然后，重启XCode，然后编译，你会在这里看到编译时间
+// defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 #endif /* LVGrandHeader_h */
