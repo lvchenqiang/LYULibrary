@@ -4,6 +4,13 @@ platform :ios, '8.0'
 install! 'cocoapods', :deterministic_uuids => false
 target 'LYULibrary_Example' do
   pod 'LYULibrary', :path => '../'
+  
+  pod 'AFNetworking'
+  pod 'YYModel'
+  pod 'RealReachability'
+  pod 'ReactiveObjC'
+
+
 
   target 'LYULibrary_Tests' do
     inherit! :search_paths
